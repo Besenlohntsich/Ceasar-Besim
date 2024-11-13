@@ -9,7 +9,20 @@ public class Ceasar {
     private int Ascii;
     public void verschluesseln()
     {
-
+        for (int i = 0; i < kt.length(); i++)
+        //wir gehen durch die Zeichenkette
+        {
+            char b = kt.charAt(i);
+            //Extraktion des Zeichens an der aktuellen Position i der Zeichenkette
+            if (Character.isLetter(b))
+            //Überprüft, ob das aktuelle Zeichen ein Buchstabe ist(Optional
+            {
+                b = (char) ((((b - 'a') + s + 26) % 26) + 'a');
+                //  Diese Zeile verschlüsselt den Buchstaben b durch Verschiebung
+                //  seines ASCII-Wertes basierend auf dem angegebenen Schlüssel.
+                //  Sie stellt sicher, dass das Ergebnis innerhalb des Alphabets bleibt,
+                //  indem es modulo 26 gerechnet und anschließend wieder in einen Buchstaben konvertiert wird.
+            }
 
     }
 
