@@ -3,6 +3,10 @@
 public class Ceasar {
     private int s;
     private String gt;
+
+    private String kt;
+
+    private int Ascii;
     public void verschluesseln()
     {
 
@@ -31,18 +35,7 @@ public class Ceasar {
 
 
 
-   public  String getKt()
-    {
 
-
-        return "idk yet";
-    }
-
-    public static void setKt(String pKt)
-    {
-
-
-    }
 
 
     public int getS() {
@@ -59,5 +52,21 @@ public class Ceasar {
 
     public void setGt(String gt) {
         this.gt = gt;
+    }
+
+    public String getKt() {
+        return kt;
+    }
+
+    public void setKt(String kt) {
+        this.kt = kt;
+    }
+
+    public int getAscii() {
+        return Ascii;
+    }
+
+    public void setAscii(int ascii) {
+        Ascii = ascii;
     }
 }
