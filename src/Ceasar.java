@@ -68,6 +68,7 @@ public class Ceasar {
     }
 
     public String getKt() {
+    kt=kt.toLowerCase();
         return kt;
     }
 
