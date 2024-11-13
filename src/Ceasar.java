@@ -28,16 +28,20 @@ public class Ceasar {
 
     public char zahlenZuBuchstaben(int pWert)
     {
+        return (char) (pWert + 'a');
+        //maybe falsch
+    }
 
-
-        return 0;
+    public int getAscii(char pWert) {
+        return (int) pWert;
     }
 
     public  int buchstabenZuZahlen(char pWert)
     {
 
+        return Character.isUpperCase(pWert) ? pWert - 'A' : pWert - 'a';
 
-        return 0;
+
     }
 
 
