@@ -1,48 +1,37 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Ceasar {
-
-    public static void verschluesseln()
+    private int s;
+    private String gt;
+    public void verschluesseln()
     {
 
 
     }
 
-    public static void entschluesseln()
+    public void entschluesseln()
     {
 
 
     }
 
-    public static char zahlenZuBuchstaben(int pWert)
-    {
-
-
-        return 0;
-    }
-
-    public static int buchstabenZuZahlen(char pWert)
+    public char zahlenZuBuchstaben(int pWert)
     {
 
 
         return 0;
     }
 
-    public static String getGt()
+    public  int buchstabenZuZahlen(char pWert)
     {
 
 
-        return "idk yet";
+        return 0;
     }
 
-   public static void setGt(String pGt)
-   {
 
 
-
-   }
-
-   public static String getKt()
+   public  String getKt()
     {
 
 
@@ -55,21 +44,20 @@ public class Ceasar {
 
     }
 
-    public static int getSchluessel()
-    {
 
-
-        return 0;
+    public int getS() {
+        return s;
     }
 
-    public static void setSchluessel(int pSchluessel)
-    {
-
-
+    public void setS(int s) {
+        this.s = s;
     }
 
+    public String getGt() {
+        return gt;
+    }
 
-
-
-
+    public void setGt(String gt) {
+        this.gt = gt;
+    }
 }
