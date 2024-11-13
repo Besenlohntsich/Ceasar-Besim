@@ -3,9 +3,20 @@
 public class Ceasar {
     private int s;
     private String gt;
+    private String kt;
     public void verschluesseln()
     {
-
+        char[] textArray = kt.toCharArray();
+        for (int i = 0; i < textArray.length; i++) {
+            if (Character.isLetter(textArray[i])) {
+                if (Character.isUpperCase(textArray[i])) {
+                    textArray[i] = (char) ('A' + (textArray[i] - 'A' + s) % 26);
+                } else {
+                    textArray[i] = (char) ('a' + (textArray[i] - 'a' + s) % 26);
+                }
+            }
+        }
+        gt = new String(textArray);
 
     }
 
@@ -31,18 +42,6 @@ public class Ceasar {
 
 
 
-   public  String getKt()
-    {
-
-
-        return "idk yet";
-    }
-
-    public static void setKt(String pKt)
-    {
-
-
-    }
 
 
     public int getS() {
@@ -59,5 +58,9 @@ public class Ceasar {
 
     public void setGt(String gt) {
         this.gt = gt;
+    }
+
+    public void setKt(String kt) {
+        this.kt = kt;
     }
 }
