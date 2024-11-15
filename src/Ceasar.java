@@ -6,6 +6,7 @@ public class Ceasar {
     private String kt;
     public void verschluesseln()
     {
+        Verwaltung.Overlay();
         char[] textArray = kt.toCharArray();
         for (int i = 0; i < textArray.length; i++) {
             if (Character.isLetter(textArray[i])) {
