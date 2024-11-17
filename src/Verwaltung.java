@@ -13,7 +13,7 @@ public class Verwaltung {
             System.out.println("1 - Verschlüsseln");
             System.out.println("2 - Entschlüsseln");
             option = sc.nextInt();
-            sc.nextLine(); // Puffer leeren
+            sc.nextLine();
 
             switch (option) {
                 case 0:
@@ -26,7 +26,7 @@ public class Verwaltung {
 
                     System.out.print("Gebe den Schlüssel ein:");
                     caesar.setS(sc.nextInt());
-                    sc.nextLine(); // Puffer leeren
+                    sc.nextLine();
 
                     caesar.verschluesseln();
                     System.out.println("Verschlüsselte Nachricht: " + caesar.getGt());
@@ -37,7 +37,7 @@ public class Verwaltung {
 
                     System.out.print("Gebe den Schlüssel ein:");
                     caesar.setS(sc.nextInt());
-                    sc.nextLine(); // Puffer leeren
+                    sc.nextLine();
 
                     caesar.entschluesseln();
                     System.out.println("Entschlüsselte Nachricht: " + caesar.getKt());
@@ -46,7 +46,7 @@ public class Verwaltung {
                     System.out.println("Ungültige Option, bitte wähle erneut.");
             }
         } while (option != 0);
-
+        //ruft alles unter dem do wieder auf, wenn option ungleich 0 ist
         sc.close();
     }
 }
