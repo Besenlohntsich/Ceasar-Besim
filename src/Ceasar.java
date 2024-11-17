@@ -73,7 +73,9 @@ public class Ceasar {
     }
 
     public void setKt(String kt) {
-        this.kt = kt;
+
+
+            this.kt = kt;
     }
 
     public int getAscii() {

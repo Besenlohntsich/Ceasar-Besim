@@ -10,7 +10,7 @@ public class Verwaltung {
         String Kt = sc.nextLine();
         //user input (zu Verschlüsselende Zeichenkette)
         System.out.print("Gebe den Schlüssel ein:");
-        int Schuessel = sc.nextInt();
+        int s = sc.nextInt();
         //Verschiebung durch CAESAR
         String GT = verschluesseln(Kt, Schuessel);
 
