@@ -33,6 +33,13 @@ public class Caesar {
 
             if (Character.isUpperCase(ch)) {
                 ch = zahlenZuBuchstaben((buchstabenZuZahlen(ch) + s) % 26);
+
+                /*
+                *
+                * Das Modulo 26 sorgt dafür, dass sich der Index
+                * im Bereich von 0 bis 25 (also innerhalb des Alphabets) bleibt.
+                * Wenn der Index größer als 25 wird, fängt er wieder von 0 an
+                */
             }
 
             result += ch;
@@ -71,8 +78,7 @@ public class Caesar {
     }
 
     /**
-     * Hilfsmethode zur Umwandlung eines Zahlenwerts in den entsprechenden Buchstaben
-     * (nach ASCII-Tabelle).
+     * Methode zur Umwandlung eines Zahlenwerts in den entsprechenden Buchstaben
      *
      * @param pWert der Zahlenwert
      * @return der entsprechende Buchstabe
@@ -81,13 +87,8 @@ public class Caesar {
         return (char) (pWert + 'A');
     }
 
-    /**
-     * Hilfsmethode zur Umwandlung eines Buchstaben in den entsprechenden Zahlenwert
-     * (nach ASCII-Tabelle).
-     *
-     * @param pWert der Buchstabe
-     * @return der entsprechende Zahlenwert
-     */
+
+
     private int buchstabenZuZahlen(char pWert) {
         return pWert - 'A';
     }
