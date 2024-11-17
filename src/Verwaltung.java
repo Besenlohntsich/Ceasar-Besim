@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Verwaltung {
@@ -12,8 +13,19 @@ public class Verwaltung {
             System.out.println("0 - Beenden");
             System.out.println("1 - Verschlüsseln");
             System.out.println("2 - Entschlüsseln");
-            option = sc.nextInt();
-            sc.nextLine();
+
+
+            while (true) {
+                try {
+                    option = sc.nextInt();
+                    sc.nextLine();
+                    break;
+                } catch (InputMismatchException e) {
+                    System.out.println("Ungültige Eingabe. Bitte eine Zahl eingeben.");
+                    sc.next();
+                }
+            }
+
 
             switch (option) {
                 case 0:
