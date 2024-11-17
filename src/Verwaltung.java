@@ -14,7 +14,7 @@ public class Verwaltung {
             System.out.println("1 - Verschlüsseln");
             System.out.println("2 - Entschlüsseln");
 
-
+            //verhindert crash durch eingabe einen falschen datentyps
             while (true) {
                 try {
                     option = sc.nextInt();
@@ -62,3 +62,18 @@ public class Verwaltung {
         sc.close();
     }
 }
+/*switch (expression):
+Der expression-Teil wird einmal ausgewertet und sein Wert wird mit den case-Labels verglichen.
+
+Jeder case-Zweig vergleicht den Wert des Ausdrucks mit dem angegebenen Wert (value).
+Wenn eine Übereinstimmung gefunden wird, werden die zugehörigen Anweisungen (Statements) ausgeführt.
+
+        break:
+Die break-Anweisung beendet den switch-Block.
+        Ohne break würden die nachfolgenden case-Zweige ebenfalls ausgeführt (Fall-Through).
+default:
+
+Der default-Zweig ist optional.
+Falls keine der case-Bedingungen erfüllt ist, wird der default-Zweig ausgeführt.
+Er sollte am Ende des switch-Statements stehen.
+*/
