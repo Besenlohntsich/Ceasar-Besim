@@ -1,5 +1,5 @@
 public class Caesar {
-    // Attribute
+
     private String gt; // verschlüsselter Text
     private String kt; // Klartext
     private int s;
@@ -16,9 +16,8 @@ public class Caesar {
 
     /**
      * Die Methode verschluesseln() verschlüsselt den Klartext (kt) unter
-     * Verwendung des Schlüssels (schluessel) nach der Caesar-Methode und
-     * speichert das Ergebnis im geheimen Text (gt). Dabei werden nur
-     * Großbuchstaben verschlüsselt.
+     * Verwendung des Schlüssels (s) nach der Caesar-Methode und
+     * speichert das Ergebnis im geheimen Text (gt).
      */
     public void verschluesseln() {
         if (kt == null || s == 0) {
@@ -52,8 +51,7 @@ public class Caesar {
     /**
      * Die Methode entschluesseln() entschlüsselt den geheimen Text (gt) unter
      * Verwendung des Schlüssels (schluessel) nach der Caesar-Methode und
-     * speichert das Ergebnis im Klartext (kt). Dabei werden nur Großbuchstaben
-     * entschlüsselt.
+     * speichert das Ergebnis im Klartext (kt).
      */
     public void entschluesseln() {
         if (gt == null || s == 0) {
@@ -80,7 +78,7 @@ public class Caesar {
     /**
      * Methode zur Umwandlung eines Zahlenwerts in den entsprechenden Buchstaben
      *
-     * @param pWert der Zahlenwert
+     * @param pWert der Zahlenwert (Alphabet Index 0=A 1=B...)
      * @return der entsprechende Buchstabe
      */
     private char zahlenZuBuchstaben(int pWert) {
