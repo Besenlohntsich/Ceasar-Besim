@@ -52,13 +52,16 @@ public class Caesar {
 
     /**
      * Die Methode entschluesseln() entschlüsselt den geheimen Text (gt) unter
-     * Verwendung des Schlüssels (schluessel) nach der Caesar-Methode und
+     * Verwendung des Schlüssels (s) nach der Caesar-Methode und
      * speichert das Ergebnis im Klartext (kt).
      */
     public void entschluesseln() {
         if (gt == null || s == 0) {
+            //wenn get = 0 wahr oder s = 0 wahr
             kt = gt;
+
             return;
+
         }
 
         String result = "";
