@@ -42,9 +42,11 @@ public class Caesar {
             }
 
             result += ch;
+            //zeichenkette wird durch die aneinanderreihung der zeichen gebildet
         }
 
         gt = result;
+        //geheimtext ist gleich dem Ergbeniss der verschlüsselung
     }
 
 
@@ -91,13 +93,11 @@ public class Caesar {
         return pWert - 'A';
     }
 
-    // Getter und Setter Methoden
 
-    /**
-     * Gibt den verschlüsselten Text (geheimen Text) zurück.
-     *
-     * @return der verschlüsselte Text
-     */
+
+
+     // Gibt den verschlüsselten Text (geheimen Text) zurück.
+
     public String getGt() {
         return gt;
     }
@@ -138,10 +138,8 @@ public class Caesar {
         return s;
     }
 
-    /**
-     * Setzt den Schlüssel für die Caesar-Verschlüsselung.
-     *
-     */
+
+     // Setzt den Schlüssel für die Caesar-Verschlüsselung.
     public void setS(int s) {
         this.s = s;
     }
