@@ -70,7 +70,7 @@ public class Caesar {
             if (Character.isUpperCase(ch)) {
                 ch = zahlenZuBuchstaben((buchstabenZuZahlen(ch) - s + 26) % 26);
             }
-
+            // s wird vom Ascii wert abgezogen um zu entschlüsseln
             result += ch;
         }
 
@@ -83,13 +83,15 @@ public class Caesar {
      * @param pWert der Zahlenwert (Alphabet Index 0=A 1=B...)
      * @return der entsprechende Buchstabe
      */
-    private char zahlenZuBuchstaben(int pWert) {
+    private char zahlenZuBuchstaben(int pWert)
+    {
         return (char) (pWert + 'A');
     }
 
 
 
-    private int buchstabenZuZahlen(char pWert) {
+    private int buchstabenZuZahlen(char pWert)
+    {
         return pWert - 'A';
     }
 
@@ -98,7 +100,8 @@ public class Caesar {
 
      // Gibt den verschlüsselten Text (geheimen Text) zurück.
 
-    public String getGt() {
+    public String getGt()
+    {
         return gt;
     }
 
@@ -107,7 +110,8 @@ public class Caesar {
      *
      * @param pGt der zu setzende verschlüsselte Text
      */
-    public void setGt(String pGt) {
+    public void setGt(String pGt)
+    {
         gt = pGt;
     }
 
@@ -116,7 +120,8 @@ public class Caesar {
      *
      * @return der unverschlüsselte Text
      */
-    public String getKt() {
+    public String getKt()
+    {
         return kt;
     }
 
@@ -125,7 +130,8 @@ public class Caesar {
      *
      * @param pKt der zu setzende unverschlüsselte Text
      */
-    public void setKt(String pKt) {
+    public void setKt(String pKt)
+    {
         kt = pKt;
     }
 
@@ -134,13 +140,15 @@ public class Caesar {
      *
      * @return der Schlüssel
      */
-    public int getS() {
+    public int getS()
+    {
         return s;
     }
 
 
      // Setzt den Schlüssel für die Caesar-Verschlüsselung.
-    public void setS(int s) {
+    public void setS(int s)
+    {
         this.s = s;
     }
 }

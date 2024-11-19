@@ -47,7 +47,7 @@ public class Verwaltung {
                     System.out.println("Gebe die verschlüsselte Nachricht ein:");
                     caesar.setGt(sc.nextLine());
 
-                    System.out.print("Gebe den Schlüssel ein:");
+                    System.out.print("Gebe eine zahl als Schlüssel ein:");
                     caesar.setS(sc.nextInt());
                     sc.nextLine();
 
