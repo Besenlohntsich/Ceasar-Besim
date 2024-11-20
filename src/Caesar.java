@@ -20,10 +20,6 @@ public class Caesar {
      * speichert das Ergebnis im geheimen Text (gt).
      */
     public void verschluesseln() {
-        if (kt == null || s == 0) {
-            gt = kt;
-            return;
-        }
 
         String result = "";
 
