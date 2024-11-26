@@ -19,6 +19,7 @@ public class Verwaltung {
                 try {
                     option = sc.nextInt();
                     sc.nextLine();
+                    //ausgewählte option des nutzers wird gesetzt
                     break;
                 } catch (InputMismatchException e) {
                     System.out.println("Ungültige Eingabe. Bitte eine Zahl eingeben.");

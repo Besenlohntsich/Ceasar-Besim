@@ -2,7 +2,7 @@ public class Caesar {
 
     private String gt; // verschlüsselter Text
     private String kt; // Klartext
-    private int s;
+    private int s; //schlüssel
 
     /**
      * Der Konstruktor initialisiert den Klartext und Geheimtext mit leeren Strings
